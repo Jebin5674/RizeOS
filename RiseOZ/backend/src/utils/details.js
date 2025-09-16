@@ -5,9 +5,6 @@ const { Freelancer } = require('../models/freelancer')
 const { Producer } = require('../models/producer');
 // const { use } = require('../routes/authRoute');
 
-const envPath = path.resolve(__dirname, '../../.env');
-dotenv.config({ path: envPath });
-
 const secretKey = process.env.JWT_SECRET;
 const details = async (req, res) => {
     try {
